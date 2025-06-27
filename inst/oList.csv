@@ -1,0 +1,8 @@
+outcome_cohort_id,outcome_cohort_name,clean_window
+1,Specific NVAMD,9999
+2,Sensitive NVAMD,9999
+3,Non-infectious Ocular Inflammation,9999
+4,Anterior Uveitis,9999
+5,Chorioretinal Inflammation,9999
+6,Panuveitis,9999
+7,Retinal Vasculitis,9999

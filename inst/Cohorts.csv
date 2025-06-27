@@ -1,0 +1,33 @@
+atlas_id,cohort_id,cohort_name,logic_description,generate_stats
+1793486,1,Specific NVAMD,NA,TRUE
+1793488,2,Sensitive NVAMD,NA,TRUE
+1793491,3,Non-infectious Ocular Inflammation,NA,TRUE
+1793493,4,Anterior Uveitis,NA,TRUE
+1793494,5,Chorioretinal Inflammation,NA,TRUE
+1793495,6,Panuveitis,NA,TRUE
+1793496,7,Retinal Vasculitis,NA,TRUE
+1793556,50,Persons with Type 2 DM and no prior T1DM or secondary Diabetes,NA,TRUE
+1793557,101,Semaglutide exposures,NA,TRUE
+1793558,102,Dulaglutide exposures,NA,TRUE
+1793559,103,Exenatide exposures,NA,TRUE
+1793560,104,Empagliflozin exposures,NA,TRUE
+1793561,105,Sitagliptin exposures,NA,TRUE
+1793562,106,Glipizide exposures,NA,TRUE
+1793563,201,New user of semaglutide as 2nd line prior T2DM and metformin,NA,TRUE
+1793564,211,New user of dulaglutide as 2nd line prior T2DM and metformin,NA,TRUE
+1793565,212,New user of exenatide as 2nd line prior T2DM and metformin,NA,TRUE
+1793566,213,New user of empagliflozin as 2nd line prior T2DM and metformin,NA,TRUE
+1793567,214,New user of sitagliptin as 2nd line prior T2DM and metformin,NA,TRUE
+1793568,215,New user of glipizide as 2nd line prior T2DM and metformin,NA,TRUE
+1793569,301,New user of semaglutide with prior T2DM,NA,TRUE
+1793570,311,New user of dulaglutide with prior T2DM,NA,TRUE
+1793571,312,New user of exenatide with prior T2DM,NA,TRUE
+1793572,313,New user of empagliflozin with prior T2DM,NA,TRUE
+1793573,314,New user of sitagliptin with prior T2DM,NA,TRUE
+1793574,315,New user of glipizide with prior T2DM,NA,TRUE
+1793575,401,New user of semaglutide as 2nd line prior T2DM and metformin Dec2017-Jan2020,NA,TRUE
+1793576,402,New user of semaglutide as 2nd line prior T2DM and metformin Feb2020-June2021,NA,TRUE
+1793577,403,New user of semaglutide as 2nd line prior T2DM and metformin July2021-Dec2024,NA,TRUE
+1793578,411,New user of empagliflozin as 2nd line prior T2DM and metformin Dec2017-Jan2020,NA,TRUE
+1793579,412,New user of empagliflozin as 2nd line prior T2DM and metformin Feb2020-June2021,NA,TRUE
+1793580,413,New user of empagliflozin as 2nd line prior T2DM and metformin July2021-Dec2024,NA,TRUE
