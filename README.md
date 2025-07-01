@@ -15,7 +15,7 @@ Estimation of the risk of NVAMD and other vision disorders from exposure to sema
 - Publications: **NA**
 - Results explorer: **NA**
 
-OHDSI network study for population-level effect estimation of risk of NAION and other vision disorders from exposure to semaglutide.
+OHDSI network study for population-level effect estimation of risk of Nvamd and other vision disorders from exposure to semaglutide.
 
 # How to run the study
 
@@ -43,7 +43,7 @@ downloaded the .ZIP archive to **`D:/git/ohdsi-studies/SemaglutideNvamd`.**
 ## Restore the execution environment
 
 [Use RStudio to open the project file](https://support.posit.co/hc/en-us/articles/200526207-Using-RStudio-Projects#:~:text=There%20are%20several%20ways%20to,Rproj).) `SemaglutideNvamd.Rproj` which is found in 
-the root directory of `D:/git/ohdsi-studies/SemaglutideNaion` (or wherever
+the root directory of `D:/git/ohdsi-studies/SemaglutideNvamd` (or wherever
 you opted to download the study package). When you open the project, you will
 see the following:
 
@@ -70,7 +70,7 @@ Type 'q()' to quit R.
 - Downloading renv ... OK
 - Installing renv  ... OK
 
-- Project 'D:/git/ohdsi-studies/SemaglutideNaion' loaded. [renv 1.0.7]
+- Project 'D:/git/ohdsi-studies/SemaglutideNvamd' loaded. [renv 1.0.7]
 - One or more packages recorded in the lockfile are not installed.
 - Use `renv::status()` for more details.
 ```
@@ -90,7 +90,7 @@ ignore this message moving forward. At this point you are ready to run the study
 ## Running the study
 
 Open the file `StrategusCodeToRun.R` found in the root of your study package
-directory (e.g. `D:/git/ohdsi-studies/SemaglutideNaion`). This script will
+directory (e.g. `D:/git/ohdsi-studies/SemaglutideNvamd`). This script will
 require some modification to work in your environment. At the top of the 
 script, you will a commented out note to tell you to run `renv::restore()`. If 
 you followed the earlier instructions, this is not necessary but is a reminder.
