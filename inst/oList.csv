@@ -6,3 +6,8 @@ outcome_cohort_id,outcome_cohort_name,clean_window
 5,Chorioretinal Inflammation,9999
 6,Panuveitis,9999
 7,Retinal Vasculitis,9999
+8,Non-infectious Ocular Inflammation excluding intraocular surgery,9999
+9,Anterior Uveitis excluding intraocular surgery,9999
+10,Chorioretinal Inflammation excluding intraocular surgery,9999
+11,Panuveitis excluding intraocular surgery,9999
+12,Retinal Vasculitis excluding intraocular surgery,9999

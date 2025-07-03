@@ -6,6 +6,11 @@ atlas_id,cohort_id,cohort_name,logic_description,generate_stats
 1793494,5,Chorioretinal Inflammation,NA,TRUE
 1793495,6,Panuveitis,NA,TRUE
 1793496,7,Retinal Vasculitis,NA,TRUE
+1793640,8,Non-infectious Ocular Inflammation excluding intraocular surgery,NA,TRUE
+1793641,9,Anterior Uveitis excluding intraocular surgery,NA,TRUE
+1793642,10,Chorioretinal Inflammation excluding intraocular surgery,NA,TRUE
+1793643,11,Panuveitis excluding intraocular surgery,NA,TRUE
+1793644,12,Retinal Vasculitis excluding intraocular surgery,NA,TRUE
 1793556,50,Persons with Type 2 DM and no prior T1DM or secondary Diabetes,NA,TRUE
 1793557,101,Semaglutide exposures,NA,TRUE
 1793558,102,Dulaglutide exposures,NA,TRUE
