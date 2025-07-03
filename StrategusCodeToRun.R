@@ -22,7 +22,7 @@ workDatabaseSchema <- "main"
 outputLocation <- 'D:/git/ohdsi-studies/SemaglutideNvamd'
 databaseName <- "Eunomia" # Only used as a folder name for results from the study
 minCellCount <- 5
-cohortTableName <- "sema_nvamd" # or s[ecify it "sema_NVAMD_CD_only"
+cohortTableName <- "sema_nvamd"
 
 # Create the connection details for your CDM
 # More details on how to do this are found here:
