@@ -37,7 +37,7 @@ connectionDetails = DatabaseConnector::createConnectionDetails(
 ##=========== END OF INPUTS ==========
 
 analysisSpecifications <- ParallelLogger::loadSettingsFromJson(
-  fileName = "inst/semaglutideNvamdAnalysisSpecification.json"
+  fileName = "inst/semaglutideNvamdAnalysisSpecification_CohortDiagnosticsOnly.json"
 )
 
 executionSettings <- Strategus::createCdmExecutionSettings(
@@ -54,7 +54,7 @@ if (!dir.exists(file.path(outputLocation, databaseName))) {
 }
 ParallelLogger::saveSettingsToJson(
   object = executionSettings,
-  fileName = file.path(outputLocation, databaseName, "executionSettings.json")
+  fileName = file.path(outputLocation, databaseName, "executionSettings_CohortDiagnostics_only.json")
 )
 
 Strategus::execute(
