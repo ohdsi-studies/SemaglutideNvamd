@@ -78,8 +78,9 @@ tcis <- list(
 
 
 outcomes <- tibble(
-  cohortId = c(1:12), 
-  cleanWindow = c(rep(9999, 12))
+  cohortId = c(4, 5, 6, 7, 
+               9, 10, 11, 12), 
+  cleanWindow = c(rep(9999, 8))
 )
 
 
@@ -273,8 +274,8 @@ allCohortIdsExceptOutcomes <- cohortDefinitionSet %>%
 
 characterizationModuleSpecifications <- cModuleSettingsCreator$createModuleSpecifications(
   targetIds = allCohortIdsExceptOutcomes,
-  # outcomeIds = outcomes$cohortId, 
-  outcomeIds = oList$outcomeCohortId, 
+  outcomeIds = outcomes$cohortId, # original
+  # outcomeIds = oList$outcomeCohortId, # Ruochong's edits
   outcomeWashoutDays = outcomes$cleanWindow,
   minPriorObservation = 365,
   dechallengeStopInterval = 30,
@@ -727,14 +728,14 @@ analysisSpecifications <- Strategus::createEmptyAnalysisSpecificiations() |>
   Strategus::addSharedResources(cohortDefinitionShared) |> 
   Strategus::addSharedResources(negativeControlsShared) |>
   Strategus::addModuleSpecifications(cohortGeneratorModuleSpecifications) |>
-  Strategus::addModuleSpecifications(cohortDiagnosticsModuleSpecifications) |>
-  Strategus::addModuleSpecifications(characterizationModuleSpecifications) |>
-  Strategus::addModuleSpecifications(cohortIncidenceModuleSpecifications) |>
-  Strategus::addModuleSpecifications(cohortMethodModuleSpecifications) |>
-  Strategus::addModuleSpecifications(selfControlledModuleSpecifications) |>
-  Strategus::addModuleSpecifications(plpModuleSpecifications)
+  Strategus::addModuleSpecifications(cohortDiagnosticsModuleSpecifications)
+  # Strategus::addModuleSpecifications(characterizationModuleSpecifications) |>
+  # Strategus::addModuleSpecifications(cohortIncidenceModuleSpecifications) |>
+  # Strategus::addModuleSpecifications(cohortMethodModuleSpecifications) |>
+  # Strategus::addModuleSpecifications(selfControlledModuleSpecifications) |>
+  # Strategus::addModuleSpecifications(plpModuleSpecifications)
 
 ParallelLogger::saveSettingsToJson(
   analysisSpecifications,
-  file.path("inst", "semaglutideNvamdAnalysisSpecification.json")
+  file.path("inst", "semaglutideNvamdAnalysisSpecification_CohortDiagnosticsOnly.json")
 )

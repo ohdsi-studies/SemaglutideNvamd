@@ -52,29 +52,30 @@ psMatchMaxRatio <- 1 # If bigger than 1, the outcome model will be conditioned o
 # study to retrieve the cohorts you downloaded as part of
 # DownloadCohorts.R
 cohortDefinitionSet <- CohortGenerator::getCohortDefinitionSet(
-  settingsFileName = "inst/sampleStudy/Eunomia/Cohorts.csv",
-  jsonFolder = "inst/sampleStudy/Eunomia/cohorts",
-  sqlFolder = "inst/sampleStudy/Eunomia/sql/sql_server"
+  settingsFileName = "inst/Cohorts.csv",
+  jsonFolder = "inst/cohorts",
+  sqlFolder = "inst/sql/sql_server"
 )
 
 # OPTIONAL: Create a subset to define the new user cohorts
 # More information: https://ohdsi.github.io/CohortGenerator/articles/CreatingCohortSubsetDefinitions.html
-subset1 <- CohortGenerator::createCohortSubsetDefinition(
-  name = "New Users",
-  definitionId = 1,
-  subsetOperators = list(
-    CohortGenerator::createLimitSubset(
-      priorTime = 365,
-      limitTo = "firstEver"
-    )
-  )
-)
-
-cohortDefinitionSet <- cohortDefinitionSet |>
-  CohortGenerator::addCohortSubsetDefinition(subset1, targetCohortIds = c(1,2))
+# subset1 <- CohortGenerator::createCohortSubsetDefinition(
+#   name = "Calendar limit",
+#   definitionId = 1,
+#   subsetOperators = list(
+#     CohortGenerator::createLimitSubset(
+#       calendarStartDate = studyStartDateWithHyphens,
+#       calendarEndDate = studyEndDateWithHyphens
+#     )
+#   )
+# )
+# 
+# subsetTargetCohortIds <- unique(c(cmTcList$targetCohortId, cmTcList$comparatorCohortId))
+# cohortDefinitionSet <- cohortDefinitionSet |>
+#   CohortGenerator::addCohortSubsetDefinition(subset1, targetCohortIds = subsetTargetCohortIds)
 
 negativeControlOutcomeCohortSet <- CohortGenerator::readCsv(
-  file = "inst/sampleStudy/Eunomia/negativeControlOutcomes.csv"
+  file = "inst/negativeControlOutcomes.csv"
 )
 
 if (any(duplicated(cohortDefinitionSet$cohortId, negativeControlOutcomeCohortSet$cohortId))) {
@@ -84,31 +85,129 @@ if (any(duplicated(cohortDefinitionSet$cohortId, negativeControlOutcomeCohortSet
 # Create some data frames to hold the cohorts we'll use in each analysis ---------------
 # Outcomes: The outcome for this study is cohort_id == 3 
 oList <- cohortDefinitionSet %>%
-  filter(.data$cohortId == 3) %>%
+  filter(.data$cohortId %in% c(1, 
+                               2, 
+                               3, 
+                               4, 
+                               5, 
+                               6, 
+                               7, 
+                               8, 
+                               9, 
+                               10, 
+                               11, 
+                               12)
+         ) %>%
   mutate(outcomeCohortId = cohortId, outcomeCohortName = cohortName) %>%
   select(outcomeCohortId, outcomeCohortName) %>%
-  mutate(cleanWindow = 365)
+  mutate(cleanWindow = 9999)
+
+CohortGenerator::writeCsv(
+  x = oList,
+  file = "inst/oList.csv",
+  warnOnFileNameCaseMismatch = F
+)
 
 # For the CohortMethod analysis we'll use the subsetted cohorts
 cmTcList <- data.frame(
-  targetCohortId = 1001,
-  targetCohortName = "celecoxib new users",
-  comparatorCohortId = 2001,
-  comparatorCohortName = "diclofenac new users"
+  targetCohortId = c(201, 201, 201, 201, 201, # CohortMethod
+                     301, 301, 301, 301, 301, # CohortMethod (sensitivity analysis 1)
+                     401, 402, 403            # CohortMethod (sensitivity analysis 2)
+                     ),
+  targetCohortName = c(
+    # CohortMethod
+    "New user of semaglutide as 2nd line prior T2DM and metformin", 
+    "New user of semaglutide as 2nd line prior T2DM and metformin", 
+    "New user of semaglutide as 2nd line prior T2DM and metformin", 
+    "New user of semaglutide as 2nd line prior T2DM and metformin", 
+    "New user of semaglutide as 2nd line prior T2DM and metformin", 
+    # CohortMethod (sensitivity analysis 1)
+    "New user of semaglutide with prior T2DM", 
+    "New user of semaglutide with prior T2DM", 
+    "New user of semaglutide with prior T2DM", 
+    "New user of semaglutide with prior T2DM", 
+    "New user of semaglutide with prior T2DM", 
+    # CohortMethod (sensitivity analysis 2)
+    "New user of semaglutide as 2nd line prior T2DM and metformin Dec2017-Jan2020", 
+    "New user of semaglutide as 2nd line prior T2DM and metformin Feb2020-June2021", 
+    "New user of semaglutide as 2nd line prior T2DM and metformin July2021-Dec2024"
+    ),
+  comparatorCohortId = c(211, 212, 213, 214, 215, # CohortMethod
+                         311, 312, 313, 314, 315, # CohortMethod (sensitivity analysis 1)
+                         411, 412, 413            # CohortMethod (sensitivity analysis 2)
+                         ),
+  comparatorCohortName = c(
+    # CohortMethod
+    "New user of dulaglutide as 2nd line prior T2DM and metformin", 
+    "New user of exenatide as 2nd line prior T2DM and metformin", 
+    "New user of empagliflozin as 2nd line prior T2DM and metformin", 
+    "New user of sitagliptin as 2nd line prior T2DM and metformin", 
+    "New user of glipizide as 2nd line prior T2DM and metformin", 
+    # CohortMethod (sensitivity analysis 1)
+    "New user of dulaglutide with prior T2DM", 
+    "New user of exenatide with prior T2DM", 
+    "New user of empagliflozin with prior T2DM", 
+    "New user of sitagliptin with prior T2DM", 
+    "New user of glipizide with prior T2DM",
+    # CohortMethod (sensitivity analysis 2)
+    "New user of empagliflozin as 2nd line prior T2DM and metformin Dec2017-Jan2020", 
+    "New user of empagliflozin as 2nd line prior T2DM and metformin Feb2020-June2021", 
+    "New user of empagliflozin as 2nd line prior T2DM and metformin July2021-Dec2024" 
+    )
 )
 
-# For the CohortMethod LSPS we'll need to exclude the drugs of interest in this
-# study
-excludedCovariateConcepts <- data.frame(
-  conceptId = c(1118084, 1124300),
-  conceptName = c("celecoxib", "diclofenac")
+CohortGenerator::writeCsv(
+  x = cmTcList,
+  file = "inst/cmTcList.csv",
+  warnOnFileNameCaseMismatch = F
 )
+
+
+# For the CohortMethod LSPS we'll need to exclude the drugs of interest in this study
+# excludedCovariateConcepts <- data.frame(
+#   conceptId = c(1118084, 1124300),
+#   conceptName = c("celecoxib", "diclofenac")
+# )
+excludedCovariateConcepts <- CohortGenerator::readCsv("inst/excludedCovariateConcepts.csv")
 
 # For the SCCS analysis we'll use the all exposure cohorts
 sccsTList <- data.frame(
-  targetCohortId = c(1,2),
-  targetCohortName = c("celecoxib", "diclofenac")
+  targetCohortId = c(101:106),
+  targetCohortName = c(
+    "Semaglutide exposures", 
+    "Dulaglutide exposures", 
+    "Exenatide exposures", 
+    "Empagliflozin exposures", 
+    "Sitagliptin exposures", 
+    "Glipizide exposures"
+    )
 )
+
+CohortGenerator::writeCsv(
+  x = sccsTList,
+  file = "inst/sccsTList.csv",
+  warnOnFileNameCaseMismatch = F
+)
+
+sccsIList <- data.frame(
+  targetCohortId = c(50),
+  targetCohortName = c("Persons with Type 2 DM and no prior T1DM or secondary Diabetes")
+)
+
+CohortGenerator::writeCsv(
+  x = sccsIList,
+  file = "inst/sccsIList.csv",
+  warnOnFileNameCaseMismatch = F
+)
+
+# Shared Resources -------------------------------------------------------------
+# Get the design assets
+cmTcList <- CohortGenerator::readCsv("inst/cmTcList.csv")
+sccsTList <- CohortGenerator::readCsv("inst/sccsTList.csv")
+sccsIList <- CohortGenerator::readCsv("inst/sccsIList.csv")
+oList <- CohortGenerator::readCsv("inst/oList.csv")
+ncoList <- CohortGenerator::readCsv("inst/negativeControlOutcomes.csv")
+excludedCovariateConcepts <- CohortGenerator::readCsv("inst/excludedCovariateConcepts.csv")
 
 # CohortGeneratorModule --------------------------------------------------------
 cgModuleSettingsCreator <- CohortGeneratorModule$new()
@@ -119,6 +218,7 @@ negativeControlsShared <- cgModuleSettingsCreator$createNegativeControlOutcomeCo
   detectOnDescendants = TRUE
 )
 cohortGeneratorModuleSpecifications <- cgModuleSettingsCreator$createModuleSpecifications(
+  # incremental = TRUE,
   generateStats = TRUE
 )
 
@@ -143,6 +243,7 @@ cModuleSettingsCreator <- CharacterizationModule$new()
 characterizationModuleSpecifications <- cModuleSettingsCreator$createModuleSpecifications(
   targetIds = cohortDefinitionSet$cohortId, # NOTE: This is all T/C/I/O
   outcomeIds = oList$outcomeCohortId,
+  outcomeWashoutDays = c(365), 
   minPriorObservation = 365,
   dechallengeStopInterval = 30,
   dechallengeEvaluationWindow = 30,
@@ -555,5 +656,5 @@ analysisSpecifications <- Strategus::createEmptyAnalysisSpecificiations() |>
 
 ParallelLogger::saveSettingsToJson(
   analysisSpecifications, 
-  file.path("inst", "sampleStudy", "Eunomia", "sampleStudyAnalysisSpecification.json")
+  file.path("inst", "semaglutideNvamdAnalysisSpecification.json")
 )
