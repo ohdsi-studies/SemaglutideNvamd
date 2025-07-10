@@ -189,8 +189,8 @@
         }
       ],
       "subsetDefs": [
-        "{\n  \"name\": \"\",\n  \"definitionId\": 1,\n  \"subsetOperators\": [\n    {\n      \"name\": \"in cohorts: (50) starts within D: -99999 - D: 0 of cohort start and ends D: 0 - D: 99999 of cohort start\",\n      \"subsetType\": \"CohortSubsetOperator\",\n      \"cohortIds\": [50],\n      \"cohortCombinationOperator\": \"all\",\n      \"negate\": false,\n      \"startWindow\": {\n        \"startDay\": -99999,\n        \"endDay\": 0,\n        \"targetAnchor\": \"cohortStart\"\n      },\n      \"endWindow\": {\n        \"startDay\": 0,\n        \"endDay\": 99999,\n        \"targetAnchor\": \"cohortStart\"\n      }\n    },\n    {\n      \"name\": \"first ever occurence with at least 365 days prior observation and 1 days follow up observation\",\n      \"subsetType\": \"LimitSubsetOperator\",\n      \"priorTime\": 365,\n      \"followUpTime\": 1,\n      \"limitTo\": \"firstEver\"\n    },\n    {\n      \"name\": \"males, females\",\n      \"subsetType\": \"DemographicSubsetOperator\",\n      \"ageMin\": 0,\n      \"ageMax\": 99999,\n      \"gender\": [8507, 8532]\n    },\n    {\n      \"name\": \"occurs after 2020-01-01 and before 2024-12-31\",\n      \"subsetType\": \"LimitSubsetOperator\",\n      \"priorTime\": 0,\n      \"followUpTime\": 0,\n      \"limitTo\": \"all\",\n      \"calendarStartDate\": \"2020-01-01\",\n      \"calendarEndDate\": \"2024-12-31\"\n    }\n  ],\n  \"packageVersion\": \"0.11.2\",\n  \"identifierExpression\": \"targetId * 1000 + definitionId\",\n  \"operatorNameConcatString\": \", \",\n  \"subsetCohortNameTemplate\": \"@baseCohortName - @subsetDefinitionName @operatorNames\"\n}",
-        "{\n  \"name\": \"\",\n  \"definitionId\": 101,\n  \"subsetOperators\": [\n    {\n      \"name\": \"first ever occurence with at least 365 days prior observation and 1 days follow up observation\",\n      \"subsetType\": \"LimitSubsetOperator\",\n      \"priorTime\": 365,\n      \"followUpTime\": 1,\n      \"limitTo\": \"firstEver\"\n    },\n    {\n      \"name\": \"males, females\",\n      \"subsetType\": \"DemographicSubsetOperator\",\n      \"ageMin\": 0,\n      \"ageMax\": 99999,\n      \"gender\": [8507, 8532]\n    },\n    {\n      \"name\": \"occurs after 2020-01-01 and before 2024-12-31\",\n      \"subsetType\": \"LimitSubsetOperator\",\n      \"priorTime\": 0,\n      \"followUpTime\": 0,\n      \"limitTo\": \"all\",\n      \"calendarStartDate\": \"2020-01-01\",\n      \"calendarEndDate\": \"2024-12-31\"\n    }\n  ],\n  \"packageVersion\": \"0.11.2\",\n  \"identifierExpression\": \"targetId * 1000 + definitionId\",\n  \"operatorNameConcatString\": \", \",\n  \"subsetCohortNameTemplate\": \"@baseCohortName - @subsetDefinitionName @operatorNames\"\n}"
+        "{\n  \"name\": \"\",\n  \"definitionId\": 1,\n  \"subsetOperators\": [\n    {\n      \"name\": \"in cohorts: (50) starts within D: -99999 - D: 0 of cohort start and ends D: 0 - D: 99999 of cohort start\",\n      \"subsetType\": \"CohortSubsetOperator\",\n      \"cohortIds\": [50],\n      \"cohortCombinationOperator\": \"all\",\n      \"negate\": false,\n      \"startWindow\": {\n        \"startDay\": -99999,\n        \"endDay\": 0,\n        \"targetAnchor\": \"cohortStart\"\n      },\n      \"endWindow\": {\n        \"startDay\": 0,\n        \"endDay\": 99999,\n        \"targetAnchor\": \"cohortStart\"\n      }\n    },\n    {\n      \"name\": \"first ever occurence with at least 365 days prior observation and 1 days follow up observation\",\n      \"subsetType\": \"LimitSubsetOperator\",\n      \"priorTime\": 365,\n      \"followUpTime\": 1,\n      \"limitTo\": \"firstEver\"\n    },\n    {\n      \"name\": \"males, females\",\n      \"subsetType\": \"DemographicSubsetOperator\",\n      \"ageMin\": 0,\n      \"ageMax\": 99999,\n      \"gender\": [8507, 8532]\n    },\n    {\n      \"name\": \"occurs after 2017-12-01 and before 2024-12-31\",\n      \"subsetType\": \"LimitSubsetOperator\",\n      \"priorTime\": 0,\n      \"followUpTime\": 0,\n      \"limitTo\": \"all\",\n      \"calendarStartDate\": \"2017-12-01\",\n      \"calendarEndDate\": \"2024-12-31\"\n    }\n  ],\n  \"packageVersion\": \"0.11.2\",\n  \"identifierExpression\": \"targetId * 1000 + definitionId\",\n  \"operatorNameConcatString\": \", \",\n  \"subsetCohortNameTemplate\": \"@baseCohortName - @subsetDefinitionName @operatorNames\"\n}",
+        "{\n  \"name\": \"\",\n  \"definitionId\": 101,\n  \"subsetOperators\": [\n    {\n      \"name\": \"first ever occurence with at least 365 days prior observation and 1 days follow up observation\",\n      \"subsetType\": \"LimitSubsetOperator\",\n      \"priorTime\": 365,\n      \"followUpTime\": 1,\n      \"limitTo\": \"firstEver\"\n    },\n    {\n      \"name\": \"males, females\",\n      \"subsetType\": \"DemographicSubsetOperator\",\n      \"ageMin\": 0,\n      \"ageMax\": 99999,\n      \"gender\": [8507, 8532]\n    },\n    {\n      \"name\": \"occurs after 2017-12-01 and before 2024-12-31\",\n      \"subsetType\": \"LimitSubsetOperator\",\n      \"priorTime\": 0,\n      \"followUpTime\": 0,\n      \"limitTo\": \"all\",\n      \"calendarStartDate\": \"2017-12-01\",\n      \"calendarEndDate\": \"2024-12-31\"\n    }\n  ],\n  \"packageVersion\": \"0.11.2\",\n  \"identifierExpression\": \"targetId * 1000 + definitionId\",\n  \"operatorNameConcatString\": \", \",\n  \"subsetCohortNameTemplate\": \"@baseCohortName - @subsetDefinitionName @operatorNames\"\n}"
       ],
       "cohortSubsets": [
         {
@@ -998,79 +998,79 @@
           "targetDefs": [
             {
               "id": 201001,
-              "name": "New user of semaglutide as 2nd line prior T2DM and metformin -  in cohorts: (50) starts within D: -99999 - D: 0 of cohort start and ends D: 0 - D: 99999 of cohort start, first ever occurence with at least 365 days prior observation and 1 days follow up observation, males, females, occurs after 2020-01-01 and before 2024-12-31"
+              "name": "New user of semaglutide as 2nd line prior T2DM and metformin -  in cohorts: (50) starts within D: -99999 - D: 0 of cohort start and ends D: 0 - D: 99999 of cohort start, first ever occurence with at least 365 days prior observation and 1 days follow up observation, males, females, occurs after 2017-12-01 and before 2024-12-31"
             },
             {
               "id": 301001,
-              "name": "New user of semaglutide with prior T2DM -  in cohorts: (50) starts within D: -99999 - D: 0 of cohort start and ends D: 0 - D: 99999 of cohort start, first ever occurence with at least 365 days prior observation and 1 days follow up observation, males, females, occurs after 2020-01-01 and before 2024-12-31"
+              "name": "New user of semaglutide with prior T2DM -  in cohorts: (50) starts within D: -99999 - D: 0 of cohort start and ends D: 0 - D: 99999 of cohort start, first ever occurence with at least 365 days prior observation and 1 days follow up observation, males, females, occurs after 2017-12-01 and before 2024-12-31"
             },
             {
               "id": 401001,
-              "name": "New user of semaglutide as 2nd line prior T2DM and metformin Dec2017-Jan2020 -  in cohorts: (50) starts within D: -99999 - D: 0 of cohort start and ends D: 0 - D: 99999 of cohort start, first ever occurence with at least 365 days prior observation and 1 days follow up observation, males, females, occurs after 2020-01-01 and before 2024-12-31"
+              "name": "New user of semaglutide as 2nd line prior T2DM and metformin Dec2017-Jan2020 -  in cohorts: (50) starts within D: -99999 - D: 0 of cohort start and ends D: 0 - D: 99999 of cohort start, first ever occurence with at least 365 days prior observation and 1 days follow up observation, males, females, occurs after 2017-12-01 and before 2024-12-31"
             },
             {
               "id": 402001,
-              "name": "New user of semaglutide as 2nd line prior T2DM and metformin Feb2020-June2021 -  in cohorts: (50) starts within D: -99999 - D: 0 of cohort start and ends D: 0 - D: 99999 of cohort start, first ever occurence with at least 365 days prior observation and 1 days follow up observation, males, females, occurs after 2020-01-01 and before 2024-12-31"
+              "name": "New user of semaglutide as 2nd line prior T2DM and metformin Feb2020-June2021 -  in cohorts: (50) starts within D: -99999 - D: 0 of cohort start and ends D: 0 - D: 99999 of cohort start, first ever occurence with at least 365 days prior observation and 1 days follow up observation, males, females, occurs after 2017-12-01 and before 2024-12-31"
             },
             {
               "id": 403001,
-              "name": "New user of semaglutide as 2nd line prior T2DM and metformin July2021-Dec2024 -  in cohorts: (50) starts within D: -99999 - D: 0 of cohort start and ends D: 0 - D: 99999 of cohort start, first ever occurence with at least 365 days prior observation and 1 days follow up observation, males, females, occurs after 2020-01-01 and before 2024-12-31"
+              "name": "New user of semaglutide as 2nd line prior T2DM and metformin July2021-Dec2024 -  in cohorts: (50) starts within D: -99999 - D: 0 of cohort start and ends D: 0 - D: 99999 of cohort start, first ever occurence with at least 365 days prior observation and 1 days follow up observation, males, females, occurs after 2017-12-01 and before 2024-12-31"
             },
             {
               "id": 211001,
-              "name": "New user of dulaglutide as 2nd line prior T2DM and metformin -  in cohorts: (50) starts within D: -99999 - D: 0 of cohort start and ends D: 0 - D: 99999 of cohort start, first ever occurence with at least 365 days prior observation and 1 days follow up observation, males, females, occurs after 2020-01-01 and before 2024-12-31"
+              "name": "New user of dulaglutide as 2nd line prior T2DM and metformin -  in cohorts: (50) starts within D: -99999 - D: 0 of cohort start and ends D: 0 - D: 99999 of cohort start, first ever occurence with at least 365 days prior observation and 1 days follow up observation, males, females, occurs after 2017-12-01 and before 2024-12-31"
             },
             {
               "id": 212001,
-              "name": "New user of exenatide as 2nd line prior T2DM and metformin -  in cohorts: (50) starts within D: -99999 - D: 0 of cohort start and ends D: 0 - D: 99999 of cohort start, first ever occurence with at least 365 days prior observation and 1 days follow up observation, males, females, occurs after 2020-01-01 and before 2024-12-31"
+              "name": "New user of exenatide as 2nd line prior T2DM and metformin -  in cohorts: (50) starts within D: -99999 - D: 0 of cohort start and ends D: 0 - D: 99999 of cohort start, first ever occurence with at least 365 days prior observation and 1 days follow up observation, males, females, occurs after 2017-12-01 and before 2024-12-31"
             },
             {
               "id": 213001,
-              "name": "New user of empagliflozin as 2nd line prior T2DM and metformin -  in cohorts: (50) starts within D: -99999 - D: 0 of cohort start and ends D: 0 - D: 99999 of cohort start, first ever occurence with at least 365 days prior observation and 1 days follow up observation, males, females, occurs after 2020-01-01 and before 2024-12-31"
+              "name": "New user of empagliflozin as 2nd line prior T2DM and metformin -  in cohorts: (50) starts within D: -99999 - D: 0 of cohort start and ends D: 0 - D: 99999 of cohort start, first ever occurence with at least 365 days prior observation and 1 days follow up observation, males, females, occurs after 2017-12-01 and before 2024-12-31"
             },
             {
               "id": 214001,
-              "name": "New user of sitagliptin as 2nd line prior T2DM and metformin -  in cohorts: (50) starts within D: -99999 - D: 0 of cohort start and ends D: 0 - D: 99999 of cohort start, first ever occurence with at least 365 days prior observation and 1 days follow up observation, males, females, occurs after 2020-01-01 and before 2024-12-31"
+              "name": "New user of sitagliptin as 2nd line prior T2DM and metformin -  in cohorts: (50) starts within D: -99999 - D: 0 of cohort start and ends D: 0 - D: 99999 of cohort start, first ever occurence with at least 365 days prior observation and 1 days follow up observation, males, females, occurs after 2017-12-01 and before 2024-12-31"
             },
             {
               "id": 215001,
-              "name": "New user of glipizide as 2nd line prior T2DM and metformin -  in cohorts: (50) starts within D: -99999 - D: 0 of cohort start and ends D: 0 - D: 99999 of cohort start, first ever occurence with at least 365 days prior observation and 1 days follow up observation, males, females, occurs after 2020-01-01 and before 2024-12-31"
+              "name": "New user of glipizide as 2nd line prior T2DM and metformin -  in cohorts: (50) starts within D: -99999 - D: 0 of cohort start and ends D: 0 - D: 99999 of cohort start, first ever occurence with at least 365 days prior observation and 1 days follow up observation, males, females, occurs after 2017-12-01 and before 2024-12-31"
             },
             {
               "id": 311001,
-              "name": "New user of dulaglutide with prior T2DM -  in cohorts: (50) starts within D: -99999 - D: 0 of cohort start and ends D: 0 - D: 99999 of cohort start, first ever occurence with at least 365 days prior observation and 1 days follow up observation, males, females, occurs after 2020-01-01 and before 2024-12-31"
+              "name": "New user of dulaglutide with prior T2DM -  in cohorts: (50) starts within D: -99999 - D: 0 of cohort start and ends D: 0 - D: 99999 of cohort start, first ever occurence with at least 365 days prior observation and 1 days follow up observation, males, females, occurs after 2017-12-01 and before 2024-12-31"
             },
             {
               "id": 312001,
-              "name": "New user of exenatide with prior T2DM -  in cohorts: (50) starts within D: -99999 - D: 0 of cohort start and ends D: 0 - D: 99999 of cohort start, first ever occurence with at least 365 days prior observation and 1 days follow up observation, males, females, occurs after 2020-01-01 and before 2024-12-31"
+              "name": "New user of exenatide with prior T2DM -  in cohorts: (50) starts within D: -99999 - D: 0 of cohort start and ends D: 0 - D: 99999 of cohort start, first ever occurence with at least 365 days prior observation and 1 days follow up observation, males, females, occurs after 2017-12-01 and before 2024-12-31"
             },
             {
               "id": 313001,
-              "name": "New user of empagliflozin with prior T2DM -  in cohorts: (50) starts within D: -99999 - D: 0 of cohort start and ends D: 0 - D: 99999 of cohort start, first ever occurence with at least 365 days prior observation and 1 days follow up observation, males, females, occurs after 2020-01-01 and before 2024-12-31"
+              "name": "New user of empagliflozin with prior T2DM -  in cohorts: (50) starts within D: -99999 - D: 0 of cohort start and ends D: 0 - D: 99999 of cohort start, first ever occurence with at least 365 days prior observation and 1 days follow up observation, males, females, occurs after 2017-12-01 and before 2024-12-31"
             },
             {
               "id": 314001,
-              "name": "New user of sitagliptin with prior T2DM -  in cohorts: (50) starts within D: -99999 - D: 0 of cohort start and ends D: 0 - D: 99999 of cohort start, first ever occurence with at least 365 days prior observation and 1 days follow up observation, males, females, occurs after 2020-01-01 and before 2024-12-31"
+              "name": "New user of sitagliptin with prior T2DM -  in cohorts: (50) starts within D: -99999 - D: 0 of cohort start and ends D: 0 - D: 99999 of cohort start, first ever occurence with at least 365 days prior observation and 1 days follow up observation, males, females, occurs after 2017-12-01 and before 2024-12-31"
             },
             {
               "id": 315001,
-              "name": "New user of glipizide with prior T2DM -  in cohorts: (50) starts within D: -99999 - D: 0 of cohort start and ends D: 0 - D: 99999 of cohort start, first ever occurence with at least 365 days prior observation and 1 days follow up observation, males, females, occurs after 2020-01-01 and before 2024-12-31"
+              "name": "New user of glipizide with prior T2DM -  in cohorts: (50) starts within D: -99999 - D: 0 of cohort start and ends D: 0 - D: 99999 of cohort start, first ever occurence with at least 365 days prior observation and 1 days follow up observation, males, females, occurs after 2017-12-01 and before 2024-12-31"
             },
             {
               "id": 411001,
-              "name": "New user of empagliflozin as 2nd line prior T2DM and metformin Dec2017-Jan2020 -  in cohorts: (50) starts within D: -99999 - D: 0 of cohort start and ends D: 0 - D: 99999 of cohort start, first ever occurence with at least 365 days prior observation and 1 days follow up observation, males, females, occurs after 2020-01-01 and before 2024-12-31"
+              "name": "New user of empagliflozin as 2nd line prior T2DM and metformin Dec2017-Jan2020 -  in cohorts: (50) starts within D: -99999 - D: 0 of cohort start and ends D: 0 - D: 99999 of cohort start, first ever occurence with at least 365 days prior observation and 1 days follow up observation, males, females, occurs after 2017-12-01 and before 2024-12-31"
             },
             {
               "id": 412001,
-              "name": "New user of empagliflozin as 2nd line prior T2DM and metformin Feb2020-June2021 -  in cohorts: (50) starts within D: -99999 - D: 0 of cohort start and ends D: 0 - D: 99999 of cohort start, first ever occurence with at least 365 days prior observation and 1 days follow up observation, males, females, occurs after 2020-01-01 and before 2024-12-31"
+              "name": "New user of empagliflozin as 2nd line prior T2DM and metformin Feb2020-June2021 -  in cohorts: (50) starts within D: -99999 - D: 0 of cohort start and ends D: 0 - D: 99999 of cohort start, first ever occurence with at least 365 days prior observation and 1 days follow up observation, males, females, occurs after 2017-12-01 and before 2024-12-31"
             },
             {
               "id": 413001,
-              "name": "New user of empagliflozin as 2nd line prior T2DM and metformin July2021-Dec2024 -  in cohorts: (50) starts within D: -99999 - D: 0 of cohort start and ends D: 0 - D: 99999 of cohort start, first ever occurence with at least 365 days prior observation and 1 days follow up observation, males, females, occurs after 2020-01-01 and before 2024-12-31"
+              "name": "New user of empagliflozin as 2nd line prior T2DM and metformin July2021-Dec2024 -  in cohorts: (50) starts within D: -99999 - D: 0 of cohort start and ends D: 0 - D: 99999 of cohort start, first ever occurence with at least 365 days prior observation and 1 days follow up observation, males, females, occurs after 2017-12-01 and before 2024-12-31"
             },
             {
               "id": 50101,
-              "name": "Persons with Type 2 DM and no prior T1DM or secondary Diabetes -  first ever occurence with at least 365 days prior observation and 1 days follow up observation, males, females, occurs after 2020-01-01 and before 2024-12-31"
+              "name": "Persons with Type 2 DM and no prior T1DM or secondary Diabetes -  first ever occurence with at least 365 days prior observation and 1 days follow up observation, males, females, occurs after 2017-12-01 and before 2024-12-31"
             }
           ],
           "outcomeDefs": [
@@ -1182,7 +1182,7 @@
             "byAge": true,
             "byGender": true,
             "byYear": true,
-            "ageBreaks": [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110]
+            "ageBreaks": [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100, 105, 110]
           }
         }
       },
@@ -1196,7 +1196,7 @@
             "analysisId": 1,
             "description": "Cohort method, On treatment",
             "getDbCohortMethodDataArgs": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "removeDuplicateSubjects": "keep all",
@@ -1389,7 +1389,7 @@
             "analysisId": 2,
             "description": "Cohort method, On treatment",
             "getDbCohortMethodDataArgs": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "removeDuplicateSubjects": "keep all",
@@ -2238,7 +2238,7 @@
               "useNestingCohort": true,
               "nestingCohortId": 50,
               "deleteCovariatesSmallCount": 0,
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "maxCasesPerOutcome": 1000000,
               "exposureIds": "exposureId",
@@ -2343,7 +2343,7 @@
               "useNestingCohort": true,
               "nestingCohortId": 50,
               "deleteCovariatesSmallCount": 0,
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "maxCasesPerOutcome": 1000000,
               "exposureIds": "exposureId",
@@ -2448,7 +2448,7 @@
               "useNestingCohort": true,
               "nestingCohortId": 50,
               "deleteCovariatesSmallCount": 0,
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "maxCasesPerOutcome": 1000000,
               "exposureIds": "exposureId",
@@ -2553,7 +2553,7 @@
               "useNestingCohort": true,
               "nestingCohortId": 50,
               "deleteCovariatesSmallCount": 0,
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "maxCasesPerOutcome": 1000000,
               "exposureIds": "exposureId",
@@ -2658,7 +2658,7 @@
               "useNestingCohort": true,
               "nestingCohortId": 50,
               "deleteCovariatesSmallCount": 0,
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "maxCasesPerOutcome": 1000000,
               "exposureIds": "exposureId",
@@ -2763,7 +2763,7 @@
               "useNestingCohort": true,
               "nestingCohortId": 50,
               "deleteCovariatesSmallCount": 0,
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "maxCasesPerOutcome": 1000000,
               "exposureIds": "exposureId",
@@ -2868,7 +2868,7 @@
               "useNestingCohort": true,
               "nestingCohortId": 50,
               "deleteCovariatesSmallCount": 0,
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "maxCasesPerOutcome": 1000000,
               "exposureIds": "exposureId",
@@ -2973,7 +2973,7 @@
               "useNestingCohort": true,
               "nestingCohortId": 50,
               "deleteCovariatesSmallCount": 0,
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "maxCasesPerOutcome": 1000000,
               "exposureIds": "exposureId",
@@ -3078,7 +3078,7 @@
               "useNestingCohort": true,
               "nestingCohortId": 50,
               "deleteCovariatesSmallCount": 0,
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "maxCasesPerOutcome": 1000000,
               "exposureIds": "exposureId",
@@ -3183,7 +3183,7 @@
               "useNestingCohort": true,
               "nestingCohortId": 50,
               "deleteCovariatesSmallCount": 0,
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "maxCasesPerOutcome": 1000000,
               "exposureIds": "exposureId",
@@ -3288,7 +3288,7 @@
               "useNestingCohort": true,
               "nestingCohortId": 50,
               "deleteCovariatesSmallCount": 0,
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "maxCasesPerOutcome": 1000000,
               "exposureIds": "exposureId",
@@ -3393,7 +3393,7 @@
               "useNestingCohort": true,
               "nestingCohortId": 50,
               "deleteCovariatesSmallCount": 0,
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "maxCasesPerOutcome": 1000000,
               "exposureIds": "exposureId",
@@ -3498,7 +3498,7 @@
               "useNestingCohort": true,
               "nestingCohortId": 50,
               "deleteCovariatesSmallCount": 0,
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "maxCasesPerOutcome": 1000000,
               "exposureIds": "exposureId",
@@ -3603,7 +3603,7 @@
               "useNestingCohort": true,
               "nestingCohortId": 50,
               "deleteCovariatesSmallCount": 0,
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "maxCasesPerOutcome": 1000000,
               "exposureIds": "exposureId",
@@ -3708,7 +3708,7 @@
               "useNestingCohort": true,
               "nestingCohortId": 50,
               "deleteCovariatesSmallCount": 0,
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "maxCasesPerOutcome": 1000000,
               "exposureIds": "exposureId",
@@ -3813,7 +3813,7 @@
               "useNestingCohort": true,
               "nestingCohortId": 50,
               "deleteCovariatesSmallCount": 0,
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "maxCasesPerOutcome": 1000000,
               "exposureIds": "exposureId",
@@ -3918,7 +3918,7 @@
               "useNestingCohort": true,
               "nestingCohortId": 50,
               "deleteCovariatesSmallCount": 0,
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "maxCasesPerOutcome": 1000000,
               "exposureIds": "exposureId",
@@ -4023,7 +4023,7 @@
               "useNestingCohort": true,
               "nestingCohortId": 50,
               "deleteCovariatesSmallCount": 0,
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "maxCasesPerOutcome": 1000000,
               "exposureIds": "exposureId",
@@ -4128,7 +4128,7 @@
               "useNestingCohort": true,
               "nestingCohortId": 50,
               "deleteCovariatesSmallCount": 0,
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "maxCasesPerOutcome": 1000000,
               "exposureIds": "exposureId",
@@ -4233,7 +4233,7 @@
               "useNestingCohort": true,
               "nestingCohortId": 50,
               "deleteCovariatesSmallCount": 0,
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "maxCasesPerOutcome": 1000000,
               "exposureIds": "exposureId",
@@ -4338,7 +4338,7 @@
               "useNestingCohort": true,
               "nestingCohortId": 50,
               "deleteCovariatesSmallCount": 0,
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "maxCasesPerOutcome": 1000000,
               "exposureIds": "exposureId",
@@ -4443,7 +4443,7 @@
               "useNestingCohort": true,
               "nestingCohortId": 50,
               "deleteCovariatesSmallCount": 0,
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "maxCasesPerOutcome": 1000000,
               "exposureIds": "exposureId",
@@ -4548,7 +4548,7 @@
               "useNestingCohort": true,
               "nestingCohortId": 50,
               "deleteCovariatesSmallCount": 0,
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "maxCasesPerOutcome": 1000000,
               "exposureIds": "exposureId",
@@ -4653,7 +4653,7 @@
               "useNestingCohort": true,
               "nestingCohortId": 50,
               "deleteCovariatesSmallCount": 0,
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "maxCasesPerOutcome": 1000000,
               "exposureIds": "exposureId",
@@ -4758,7 +4758,7 @@
               "useNestingCohort": true,
               "nestingCohortId": 50,
               "deleteCovariatesSmallCount": 0,
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "maxCasesPerOutcome": 1000000,
               "exposureIds": "exposureId",
@@ -4863,7 +4863,7 @@
               "useNestingCohort": true,
               "nestingCohortId": 50,
               "deleteCovariatesSmallCount": 0,
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "maxCasesPerOutcome": 1000000,
               "exposureIds": "exposureId",
@@ -4968,7 +4968,7 @@
               "useNestingCohort": true,
               "nestingCohortId": 50,
               "deleteCovariatesSmallCount": 0,
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "maxCasesPerOutcome": 1000000,
               "exposureIds": "exposureId",
@@ -5073,7 +5073,7 @@
               "useNestingCohort": true,
               "nestingCohortId": 50,
               "deleteCovariatesSmallCount": 0,
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "maxCasesPerOutcome": 1000000,
               "exposureIds": "exposureId",
@@ -5178,7 +5178,7 @@
               "useNestingCohort": true,
               "nestingCohortId": 50,
               "deleteCovariatesSmallCount": 0,
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "maxCasesPerOutcome": 1000000,
               "exposureIds": "exposureId",
@@ -5283,7 +5283,7 @@
               "useNestingCohort": true,
               "nestingCohortId": 50,
               "deleteCovariatesSmallCount": 0,
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "maxCasesPerOutcome": 1000000,
               "exposureIds": "exposureId",
@@ -5388,7 +5388,7 @@
               "useNestingCohort": true,
               "nestingCohortId": 50,
               "deleteCovariatesSmallCount": 0,
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "maxCasesPerOutcome": 1000000,
               "exposureIds": "exposureId",
@@ -5493,7 +5493,7 @@
               "useNestingCohort": true,
               "nestingCohortId": 50,
               "deleteCovariatesSmallCount": 0,
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "maxCasesPerOutcome": 1000000,
               "exposureIds": "exposureId",
@@ -5598,7 +5598,7 @@
               "useNestingCohort": true,
               "nestingCohortId": 50,
               "deleteCovariatesSmallCount": 0,
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "maxCasesPerOutcome": 1000000,
               "exposureIds": "exposureId",
@@ -5703,7 +5703,7 @@
               "useNestingCohort": true,
               "nestingCohortId": 50,
               "deleteCovariatesSmallCount": 0,
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "maxCasesPerOutcome": 1000000,
               "exposureIds": "exposureId",
@@ -5808,7 +5808,7 @@
               "useNestingCohort": true,
               "nestingCohortId": 50,
               "deleteCovariatesSmallCount": 0,
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "maxCasesPerOutcome": 1000000,
               "exposureIds": "exposureId",
@@ -5913,7 +5913,7 @@
               "useNestingCohort": true,
               "nestingCohortId": 50,
               "deleteCovariatesSmallCount": 0,
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "maxCasesPerOutcome": 1000000,
               "exposureIds": "exposureId",
@@ -28077,7 +28077,7 @@
             "targetId": 201001,
             "outcomeId": 1,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -28160,7 +28160,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 5904152,
+                  "seed": 74379430,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -28175,7 +28175,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 13978,
+              "seed": 52858,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -28195,7 +28195,7 @@
             "targetId": 201001,
             "outcomeId": 2,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -28278,7 +28278,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 47096217,
+                  "seed": 13350301,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -28293,7 +28293,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 50779,
+              "seed": 63272,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -28313,7 +28313,7 @@
             "targetId": 201001,
             "outcomeId": 3,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -28396,7 +28396,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 12397928,
+                  "seed": 13349933,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -28411,7 +28411,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 59009,
+              "seed": 50646,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -28431,7 +28431,7 @@
             "targetId": 201001,
             "outcomeId": 4,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -28514,7 +28514,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 80406927,
+                  "seed": 80487805,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -28529,7 +28529,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 1422,
+              "seed": 63802,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -28549,7 +28549,7 @@
             "targetId": 201001,
             "outcomeId": 5,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -28632,7 +28632,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 40736007,
+                  "seed": 65038359,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -28647,7 +28647,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 32424,
+              "seed": 74229,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -28667,7 +28667,7 @@
             "targetId": 201001,
             "outcomeId": 6,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -28750,7 +28750,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 18395907,
+                  "seed": 82606704,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -28765,7 +28765,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 90294,
+              "seed": 73360,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -28785,7 +28785,7 @@
             "targetId": 201001,
             "outcomeId": 7,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -28868,7 +28868,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 30357014,
+                  "seed": 73417416,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -28883,7 +28883,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 87886,
+              "seed": 99926,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -28903,7 +28903,7 @@
             "targetId": 201001,
             "outcomeId": 8,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -28986,7 +28986,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 88741993,
+                  "seed": 27302626,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -29001,7 +29001,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 76423,
+              "seed": 28052,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -29021,7 +29021,7 @@
             "targetId": 201001,
             "outcomeId": 9,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -29104,7 +29104,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 48969327,
+                  "seed": 85018644,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -29119,7 +29119,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 26020,
+              "seed": 8101,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -29139,7 +29139,7 @@
             "targetId": 201001,
             "outcomeId": 10,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -29222,7 +29222,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 85371132,
+                  "seed": 22387564,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -29237,7 +29237,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 42251,
+              "seed": 87853,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -29257,7 +29257,7 @@
             "targetId": 201001,
             "outcomeId": 11,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -29340,7 +29340,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 92072712,
+                  "seed": 87537971,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -29355,7 +29355,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 15669,
+              "seed": 82338,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -29375,7 +29375,7 @@
             "targetId": 201001,
             "outcomeId": 12,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -29458,7 +29458,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 79487419,
+                  "seed": 12936002,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -29473,7 +29473,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 96028,
+              "seed": 72316,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -29493,7 +29493,7 @@
             "targetId": 201001,
             "outcomeId": 1,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -29576,7 +29576,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 31411580,
+                  "seed": 58008174,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -29591,7 +29591,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 27705,
+              "seed": 91347,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -29611,7 +29611,7 @@
             "targetId": 201001,
             "outcomeId": 2,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -29694,7 +29694,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 27180211,
+                  "seed": 89143400,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -29709,7 +29709,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 14683,
+              "seed": 23820,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -29729,7 +29729,7 @@
             "targetId": 201001,
             "outcomeId": 3,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -29812,7 +29812,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 17437007,
+                  "seed": 90492750,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -29827,7 +29827,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 56852,
+              "seed": 28290,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -29847,7 +29847,7 @@
             "targetId": 201001,
             "outcomeId": 4,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -29930,7 +29930,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 74883319,
+                  "seed": 96108316,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -29945,7 +29945,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 91532,
+              "seed": 64042,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -29965,7 +29965,7 @@
             "targetId": 201001,
             "outcomeId": 5,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -30048,7 +30048,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 67838736,
+                  "seed": 89881674,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -30063,7 +30063,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 28268,
+              "seed": 6665,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -30083,7 +30083,7 @@
             "targetId": 201001,
             "outcomeId": 6,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -30166,7 +30166,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 54259193,
+                  "seed": 75182614,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -30181,7 +30181,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 52797,
+              "seed": 52570,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -30201,7 +30201,7 @@
             "targetId": 201001,
             "outcomeId": 7,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -30284,7 +30284,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 34669271,
+                  "seed": 22301258,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -30299,7 +30299,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 13624,
+              "seed": 18446,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -30319,7 +30319,7 @@
             "targetId": 201001,
             "outcomeId": 8,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -30402,7 +30402,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 49094360,
+                  "seed": 28771624,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -30417,7 +30417,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 54528,
+              "seed": 10785,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -30437,7 +30437,7 @@
             "targetId": 201001,
             "outcomeId": 9,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -30520,7 +30520,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 41978365,
+                  "seed": 51099215,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -30535,7 +30535,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 73004,
+              "seed": 67862,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -30555,7 +30555,7 @@
             "targetId": 201001,
             "outcomeId": 10,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -30638,7 +30638,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 1834829,
+                  "seed": 98746407,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -30653,7 +30653,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 97245,
+              "seed": 71723,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -30673,7 +30673,7 @@
             "targetId": 201001,
             "outcomeId": 11,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -30756,7 +30756,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 33638391,
+                  "seed": 35823751,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -30771,7 +30771,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 52015,
+              "seed": 49810,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -30791,7 +30791,7 @@
             "targetId": 201001,
             "outcomeId": 12,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -30874,7 +30874,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 14441247,
+                  "seed": 84458003,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -30889,7 +30889,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 71550,
+              "seed": 89285,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -30909,7 +30909,7 @@
             "targetId": 301001,
             "outcomeId": 1,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -30992,7 +30992,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 23466103,
+                  "seed": 17533432,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -31007,7 +31007,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 37379,
+              "seed": 86140,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -31027,7 +31027,7 @@
             "targetId": 301001,
             "outcomeId": 2,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -31110,7 +31110,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 37182147,
+                  "seed": 73876091,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -31125,7 +31125,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 8333,
+              "seed": 57570,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -31145,7 +31145,7 @@
             "targetId": 301001,
             "outcomeId": 3,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -31228,7 +31228,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 57308419,
+                  "seed": 53817357,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -31243,7 +31243,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 10803,
+              "seed": 89626,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -31263,7 +31263,7 @@
             "targetId": 301001,
             "outcomeId": 4,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -31346,7 +31346,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 28688592,
+                  "seed": 55331364,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -31361,7 +31361,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 15499,
+              "seed": 2997,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -31381,7 +31381,7 @@
             "targetId": 301001,
             "outcomeId": 5,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -31464,7 +31464,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 73613162,
+                  "seed": 90485657,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -31479,7 +31479,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 868,
+              "seed": 52494,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -31499,7 +31499,7 @@
             "targetId": 301001,
             "outcomeId": 6,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -31582,7 +31582,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 6502947,
+                  "seed": 57887483,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -31597,7 +31597,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 62695,
+              "seed": 96023,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -31617,7 +31617,7 @@
             "targetId": 301001,
             "outcomeId": 7,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -31700,7 +31700,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 16603155,
+                  "seed": 47924680,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -31715,7 +31715,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 53425,
+              "seed": 68434,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -31735,7 +31735,7 @@
             "targetId": 301001,
             "outcomeId": 8,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -31818,7 +31818,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 22233286,
+                  "seed": 63259788,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -31833,7 +31833,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 54623,
+              "seed": 81780,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -31853,7 +31853,7 @@
             "targetId": 301001,
             "outcomeId": 9,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -31936,7 +31936,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 57377224,
+                  "seed": 98613122,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -31951,7 +31951,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 63945,
+              "seed": 78017,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -31971,7 +31971,7 @@
             "targetId": 301001,
             "outcomeId": 10,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -32054,7 +32054,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 41511921,
+                  "seed": 28245118,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -32069,7 +32069,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 22734,
+              "seed": 99198,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -32089,7 +32089,7 @@
             "targetId": 301001,
             "outcomeId": 11,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -32172,7 +32172,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 78945248,
+                  "seed": 87641226,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -32187,7 +32187,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 2667,
+              "seed": 2612,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -32207,7 +32207,7 @@
             "targetId": 301001,
             "outcomeId": 12,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -32290,7 +32290,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 20423825,
+                  "seed": 5376049,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -32305,7 +32305,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 81172,
+              "seed": 2436,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -32325,7 +32325,7 @@
             "targetId": 301001,
             "outcomeId": 1,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -32408,7 +32408,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 94682955,
+                  "seed": 60166966,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -32423,7 +32423,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 16409,
+              "seed": 22150,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -32443,7 +32443,7 @@
             "targetId": 301001,
             "outcomeId": 2,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -32526,7 +32526,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 62724793,
+                  "seed": 20601367,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -32541,7 +32541,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 57940,
+              "seed": 37048,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -32561,7 +32561,7 @@
             "targetId": 301001,
             "outcomeId": 3,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -32644,7 +32644,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 24085959,
+                  "seed": 36341028,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -32659,7 +32659,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 11299,
+              "seed": 86023,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -32679,7 +32679,7 @@
             "targetId": 301001,
             "outcomeId": 4,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -32762,7 +32762,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 20072338,
+                  "seed": 55279230,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -32777,7 +32777,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 70316,
+              "seed": 48222,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -32797,7 +32797,7 @@
             "targetId": 301001,
             "outcomeId": 5,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -32880,7 +32880,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 17118431,
+                  "seed": 89367547,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -32895,7 +32895,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 74749,
+              "seed": 79449,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -32915,7 +32915,7 @@
             "targetId": 301001,
             "outcomeId": 6,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -32998,7 +32998,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 311209,
+                  "seed": 56674211,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -33013,7 +33013,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 93854,
+              "seed": 46274,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -33033,7 +33033,7 @@
             "targetId": 301001,
             "outcomeId": 7,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -33116,7 +33116,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 38876343,
+                  "seed": 29240731,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -33131,7 +33131,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 35933,
+              "seed": 47843,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -33151,7 +33151,7 @@
             "targetId": 301001,
             "outcomeId": 8,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -33234,7 +33234,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 23911921,
+                  "seed": 5219637,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -33249,7 +33249,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 20297,
+              "seed": 40013,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -33269,7 +33269,7 @@
             "targetId": 301001,
             "outcomeId": 9,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -33352,7 +33352,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 64652487,
+                  "seed": 78419156,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -33367,7 +33367,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 94782,
+              "seed": 49257,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -33387,7 +33387,7 @@
             "targetId": 301001,
             "outcomeId": 10,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -33470,7 +33470,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 30242390,
+                  "seed": 80957093,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -33485,7 +33485,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 77774,
+              "seed": 32700,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -33505,7 +33505,7 @@
             "targetId": 301001,
             "outcomeId": 11,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -33588,7 +33588,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 74626414,
+                  "seed": 60654036,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -33603,7 +33603,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 19575,
+              "seed": 66738,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -33623,7 +33623,7 @@
             "targetId": 301001,
             "outcomeId": 12,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -33706,7 +33706,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 89692257,
+                  "seed": 83545548,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -33721,7 +33721,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 44214,
+              "seed": 84692,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -33741,7 +33741,7 @@
             "targetId": 401001,
             "outcomeId": 1,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -33824,7 +33824,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 15895697,
+                  "seed": 22813095,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -33839,7 +33839,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 45372,
+              "seed": 96784,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -33859,7 +33859,7 @@
             "targetId": 401001,
             "outcomeId": 2,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -33942,7 +33942,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 10205408,
+                  "seed": 53035902,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -33957,7 +33957,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 55007,
+              "seed": 20176,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -33977,7 +33977,7 @@
             "targetId": 401001,
             "outcomeId": 3,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -34060,7 +34060,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 69389869,
+                  "seed": 59355867,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -34075,7 +34075,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 13460,
+              "seed": 47978,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -34095,7 +34095,7 @@
             "targetId": 401001,
             "outcomeId": 4,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -34178,7 +34178,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 10991292,
+                  "seed": 19525782,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -34193,7 +34193,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 75128,
+              "seed": 84986,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -34213,7 +34213,7 @@
             "targetId": 401001,
             "outcomeId": 5,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -34296,7 +34296,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 85613845,
+                  "seed": 21664887,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -34311,7 +34311,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 52491,
+              "seed": 26050,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -34331,7 +34331,7 @@
             "targetId": 401001,
             "outcomeId": 6,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -34414,7 +34414,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 87511450,
+                  "seed": 12289641,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -34429,7 +34429,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 5672,
+              "seed": 64089,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -34449,7 +34449,7 @@
             "targetId": 401001,
             "outcomeId": 7,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -34532,7 +34532,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 38600236,
+                  "seed": 46216458,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -34547,7 +34547,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 90193,
+              "seed": 78201,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -34567,7 +34567,7 @@
             "targetId": 401001,
             "outcomeId": 8,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -34650,7 +34650,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 39647121,
+                  "seed": 29898535,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -34665,7 +34665,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 69371,
+              "seed": 17850,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -34685,7 +34685,7 @@
             "targetId": 401001,
             "outcomeId": 9,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -34768,7 +34768,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 46241972,
+                  "seed": 33195383,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -34783,7 +34783,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 41317,
+              "seed": 69970,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -34803,7 +34803,7 @@
             "targetId": 401001,
             "outcomeId": 10,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -34886,7 +34886,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 13799102,
+                  "seed": 1415057,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -34901,7 +34901,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 91759,
+              "seed": 80936,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -34921,7 +34921,7 @@
             "targetId": 401001,
             "outcomeId": 11,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -35004,7 +35004,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 99534674,
+                  "seed": 17489682,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -35019,7 +35019,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 69321,
+              "seed": 74635,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -35039,7 +35039,7 @@
             "targetId": 401001,
             "outcomeId": 12,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -35122,7 +35122,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 59276054,
+                  "seed": 94061983,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -35137,7 +35137,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 45684,
+              "seed": 37943,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -35157,7 +35157,7 @@
             "targetId": 401001,
             "outcomeId": 1,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -35240,7 +35240,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 82127541,
+                  "seed": 76624776,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -35255,7 +35255,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 63175,
+              "seed": 66960,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -35275,7 +35275,7 @@
             "targetId": 401001,
             "outcomeId": 2,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -35358,7 +35358,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 98892938,
+                  "seed": 85786304,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -35373,7 +35373,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 82639,
+              "seed": 11245,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -35393,7 +35393,7 @@
             "targetId": 401001,
             "outcomeId": 3,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -35476,7 +35476,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 7632456,
+                  "seed": 84267333,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -35491,7 +35491,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 53488,
+              "seed": 9409,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -35511,7 +35511,7 @@
             "targetId": 401001,
             "outcomeId": 4,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -35594,7 +35594,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 94224110,
+                  "seed": 47213052,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -35609,7 +35609,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 75091,
+              "seed": 92150,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -35629,7 +35629,7 @@
             "targetId": 401001,
             "outcomeId": 5,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -35712,7 +35712,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 65728849,
+                  "seed": 23409015,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -35727,7 +35727,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 19165,
+              "seed": 76053,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -35747,7 +35747,7 @@
             "targetId": 401001,
             "outcomeId": 6,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -35830,7 +35830,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 17767269,
+                  "seed": 13129512,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -35845,7 +35845,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 54239,
+              "seed": 7541,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -35865,7 +35865,7 @@
             "targetId": 401001,
             "outcomeId": 7,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -35948,7 +35948,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 85157300,
+                  "seed": 30680841,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -35963,7 +35963,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 8813,
+              "seed": 48434,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -35983,7 +35983,7 @@
             "targetId": 401001,
             "outcomeId": 8,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -36066,7 +36066,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 9180339,
+                  "seed": 72088104,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -36081,7 +36081,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 5218,
+              "seed": 30011,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -36101,7 +36101,7 @@
             "targetId": 401001,
             "outcomeId": 9,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -36184,7 +36184,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 67192453,
+                  "seed": 87178820,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -36199,7 +36199,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 3884,
+              "seed": 19587,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -36219,7 +36219,7 @@
             "targetId": 401001,
             "outcomeId": 10,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -36302,7 +36302,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 15249181,
+                  "seed": 97953295,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -36317,7 +36317,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 72579,
+              "seed": 27347,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -36337,7 +36337,7 @@
             "targetId": 401001,
             "outcomeId": 11,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -36420,7 +36420,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 80557519,
+                  "seed": 92226663,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -36435,7 +36435,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 94159,
+              "seed": 65116,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -36455,7 +36455,7 @@
             "targetId": 401001,
             "outcomeId": 12,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -36538,7 +36538,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 80535102,
+                  "seed": 52506723,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -36553,7 +36553,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 79226,
+              "seed": 93972,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -36573,7 +36573,7 @@
             "targetId": 402001,
             "outcomeId": 1,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -36656,7 +36656,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 28483196,
+                  "seed": 64628447,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -36671,7 +36671,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 36887,
+              "seed": 61862,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -36691,7 +36691,7 @@
             "targetId": 402001,
             "outcomeId": 2,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -36774,7 +36774,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 86437060,
+                  "seed": 8291181,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -36789,7 +36789,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 23052,
+              "seed": 81574,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -36809,7 +36809,7 @@
             "targetId": 402001,
             "outcomeId": 3,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -36892,7 +36892,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 94215981,
+                  "seed": 44028651,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -36907,7 +36907,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 29367,
+              "seed": 1472,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -36927,7 +36927,7 @@
             "targetId": 402001,
             "outcomeId": 4,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -37010,7 +37010,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 51754613,
+                  "seed": 45037893,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -37025,7 +37025,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 53894,
+              "seed": 41618,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -37045,7 +37045,7 @@
             "targetId": 402001,
             "outcomeId": 5,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -37128,7 +37128,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 85606451,
+                  "seed": 7367376,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -37143,7 +37143,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 81999,
+              "seed": 26605,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -37163,7 +37163,7 @@
             "targetId": 402001,
             "outcomeId": 6,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -37246,7 +37246,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 55533054,
+                  "seed": 509760,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -37261,7 +37261,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 6867,
+              "seed": 40729,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -37281,7 +37281,7 @@
             "targetId": 402001,
             "outcomeId": 7,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -37364,7 +37364,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 91902655,
+                  "seed": 38992840,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -37379,7 +37379,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 42844,
+              "seed": 49374,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -37399,7 +37399,7 @@
             "targetId": 402001,
             "outcomeId": 8,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -37482,7 +37482,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 6966788,
+                  "seed": 38148382,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -37497,7 +37497,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 13325,
+              "seed": 74480,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -37517,7 +37517,7 @@
             "targetId": 402001,
             "outcomeId": 9,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -37600,7 +37600,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 48303765,
+                  "seed": 67973680,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -37615,7 +37615,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 11248,
+              "seed": 32627,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -37635,7 +37635,7 @@
             "targetId": 402001,
             "outcomeId": 10,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -37718,7 +37718,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 54098513,
+                  "seed": 42429896,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -37733,7 +37733,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 980,
+              "seed": 85785,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -37753,7 +37753,7 @@
             "targetId": 402001,
             "outcomeId": 11,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -37836,7 +37836,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 3186047,
+                  "seed": 97216808,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -37851,7 +37851,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 41478,
+              "seed": 42303,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -37871,7 +37871,7 @@
             "targetId": 402001,
             "outcomeId": 12,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -37954,7 +37954,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 20176383,
+                  "seed": 78558676,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -37969,7 +37969,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 55169,
+              "seed": 3155,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -37989,7 +37989,7 @@
             "targetId": 402001,
             "outcomeId": 1,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -38072,7 +38072,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 22021954,
+                  "seed": 13156940,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -38087,7 +38087,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 35741,
+              "seed": 64675,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -38107,7 +38107,7 @@
             "targetId": 402001,
             "outcomeId": 2,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -38190,7 +38190,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 17361162,
+                  "seed": 73365917,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -38205,7 +38205,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 73263,
+              "seed": 61301,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -38225,7 +38225,7 @@
             "targetId": 402001,
             "outcomeId": 3,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -38308,7 +38308,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 84307344,
+                  "seed": 4876720,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -38323,7 +38323,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 40332,
+              "seed": 17343,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -38343,7 +38343,7 @@
             "targetId": 402001,
             "outcomeId": 4,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -38426,7 +38426,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 41938908,
+                  "seed": 42895275,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -38441,7 +38441,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 82770,
+              "seed": 79658,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -38461,7 +38461,7 @@
             "targetId": 402001,
             "outcomeId": 5,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -38544,7 +38544,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 84549584,
+                  "seed": 44549300,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -38559,7 +38559,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 49948,
+              "seed": 275,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -38579,7 +38579,7 @@
             "targetId": 402001,
             "outcomeId": 6,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -38662,7 +38662,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 99956263,
+                  "seed": 35706709,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -38677,7 +38677,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 29389,
+              "seed": 44210,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -38697,7 +38697,7 @@
             "targetId": 402001,
             "outcomeId": 7,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -38780,7 +38780,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 86002994,
+                  "seed": 19855695,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -38795,7 +38795,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 49693,
+              "seed": 99255,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -38815,7 +38815,7 @@
             "targetId": 402001,
             "outcomeId": 8,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -38898,7 +38898,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 30708420,
+                  "seed": 35505498,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -38913,7 +38913,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 13473,
+              "seed": 82329,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -38933,7 +38933,7 @@
             "targetId": 402001,
             "outcomeId": 9,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -39016,7 +39016,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 81291470,
+                  "seed": 85846531,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -39031,7 +39031,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 41654,
+              "seed": 22874,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -39051,7 +39051,7 @@
             "targetId": 402001,
             "outcomeId": 10,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -39134,7 +39134,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 39080999,
+                  "seed": 97893045,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -39149,7 +39149,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 98016,
+              "seed": 38740,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -39169,7 +39169,7 @@
             "targetId": 402001,
             "outcomeId": 11,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -39252,7 +39252,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 21259868,
+                  "seed": 23585744,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -39267,7 +39267,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 42253,
+              "seed": 17168,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -39287,7 +39287,7 @@
             "targetId": 402001,
             "outcomeId": 12,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -39370,7 +39370,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 69641299,
+                  "seed": 15499409,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -39385,7 +39385,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 38933,
+              "seed": 60802,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -39405,7 +39405,7 @@
             "targetId": 403001,
             "outcomeId": 1,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -39488,7 +39488,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 59279813,
+                  "seed": 43112475,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -39503,7 +39503,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 48683,
+              "seed": 36717,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -39523,7 +39523,7 @@
             "targetId": 403001,
             "outcomeId": 2,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -39606,7 +39606,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 97777783,
+                  "seed": 82569671,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -39621,7 +39621,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 81262,
+              "seed": 86536,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -39641,7 +39641,7 @@
             "targetId": 403001,
             "outcomeId": 3,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -39724,7 +39724,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 11655939,
+                  "seed": 66240826,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -39739,7 +39739,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 77024,
+              "seed": 54422,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -39759,7 +39759,7 @@
             "targetId": 403001,
             "outcomeId": 4,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -39842,7 +39842,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 72435560,
+                  "seed": 88635371,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -39857,7 +39857,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 74751,
+              "seed": 18740,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -39877,7 +39877,7 @@
             "targetId": 403001,
             "outcomeId": 5,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -39960,7 +39960,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 24694099,
+                  "seed": 33042580,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -39975,7 +39975,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 22737,
+              "seed": 84929,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -39995,7 +39995,7 @@
             "targetId": 403001,
             "outcomeId": 6,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -40078,7 +40078,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 408274,
+                  "seed": 26414499,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -40093,7 +40093,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 37431,
+              "seed": 16404,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -40113,7 +40113,7 @@
             "targetId": 403001,
             "outcomeId": 7,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -40196,7 +40196,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 71040067,
+                  "seed": 26551695,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -40211,7 +40211,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 36221,
+              "seed": 72031,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -40231,7 +40231,7 @@
             "targetId": 403001,
             "outcomeId": 8,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -40314,7 +40314,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 18936683,
+                  "seed": 84745517,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -40329,7 +40329,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 4466,
+              "seed": 56088,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -40349,7 +40349,7 @@
             "targetId": 403001,
             "outcomeId": 9,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -40432,7 +40432,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 24194618,
+                  "seed": 20617499,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -40447,7 +40447,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 91982,
+              "seed": 8257,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -40467,7 +40467,7 @@
             "targetId": 403001,
             "outcomeId": 10,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -40550,7 +40550,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 84491325,
+                  "seed": 48532443,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -40565,7 +40565,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 18764,
+              "seed": 50679,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -40585,7 +40585,7 @@
             "targetId": 403001,
             "outcomeId": 11,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -40668,7 +40668,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 51549748,
+                  "seed": 31018173,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -40683,7 +40683,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 2493,
+              "seed": 84080,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -40703,7 +40703,7 @@
             "targetId": 403001,
             "outcomeId": 12,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -40786,7 +40786,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 91655431,
+                  "seed": 64091143,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -40801,7 +40801,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 97117,
+              "seed": 94716,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -40821,7 +40821,7 @@
             "targetId": 403001,
             "outcomeId": 1,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -40904,7 +40904,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 70329961,
+                  "seed": 30309580,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -40919,7 +40919,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 62533,
+              "seed": 69729,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -40939,7 +40939,7 @@
             "targetId": 403001,
             "outcomeId": 2,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -41022,7 +41022,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 19447931,
+                  "seed": 78964809,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -41037,7 +41037,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 97244,
+              "seed": 90996,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -41057,7 +41057,7 @@
             "targetId": 403001,
             "outcomeId": 3,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -41140,7 +41140,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 7930427,
+                  "seed": 2005292,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -41155,7 +41155,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 64001,
+              "seed": 98206,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -41175,7 +41175,7 @@
             "targetId": 403001,
             "outcomeId": 4,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -41258,7 +41258,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 81432694,
+                  "seed": 2265420,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -41273,7 +41273,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 34199,
+              "seed": 91489,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -41293,7 +41293,7 @@
             "targetId": 403001,
             "outcomeId": 5,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -41376,7 +41376,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 61520649,
+                  "seed": 73855762,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -41391,7 +41391,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 79854,
+              "seed": 72849,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -41411,7 +41411,7 @@
             "targetId": 403001,
             "outcomeId": 6,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -41494,7 +41494,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 22215363,
+                  "seed": 43054798,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -41509,7 +41509,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 76814,
+              "seed": 12017,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -41529,7 +41529,7 @@
             "targetId": 403001,
             "outcomeId": 7,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -41612,7 +41612,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 76725480,
+                  "seed": 1106451,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -41627,7 +41627,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 8785,
+              "seed": 61309,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -41647,7 +41647,7 @@
             "targetId": 403001,
             "outcomeId": 8,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -41730,7 +41730,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 71937369,
+                  "seed": 93983111,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -41745,7 +41745,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 42780,
+              "seed": 24972,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -41765,7 +41765,7 @@
             "targetId": 403001,
             "outcomeId": 9,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -41848,7 +41848,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 62803034,
+                  "seed": 28548662,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -41863,7 +41863,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 40091,
+              "seed": 66626,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -41883,7 +41883,7 @@
             "targetId": 403001,
             "outcomeId": 10,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -41966,7 +41966,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 53291880,
+                  "seed": 90343590,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -41981,7 +41981,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 70956,
+              "seed": 80326,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -42001,7 +42001,7 @@
             "targetId": 403001,
             "outcomeId": 11,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -42084,7 +42084,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 31426581,
+                  "seed": 97707780,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -42099,7 +42099,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 44560,
+              "seed": 20064,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
@@ -42119,7 +42119,7 @@
             "targetId": 403001,
             "outcomeId": 12,
             "restrictPlpDataSettings": {
-              "studyStartDate": "20200101",
+              "studyStartDate": "20171201",
               "studyEndDate": "20241231",
               "firstExposureOnly": false,
               "washoutPeriod": 0,
@@ -42202,7 +42202,7 @@
                   "modelType": "logistic",
                   "addIntercept": true,
                   "useControl": true,
-                  "seed": 82496735,
+                  "seed": 10171939,
                   "name": "Lasso Logistic Regression",
                   "threads": -1,
                   "tolerance": 2e-06,
@@ -42217,7 +42217,7 @@
             "splitSettings": {
               "test": 0.25,
               "train": 0.75,
-              "seed": 73660,
+              "seed": 22896,
               "nfold": 3,
               "attr_class": "splitSettings",
               "attr_fun": "randomSplitter"
