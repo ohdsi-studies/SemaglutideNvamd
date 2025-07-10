@@ -76,13 +76,11 @@ tcis <- list(
   ) 
 )
 
-
+# include all outcomes
 outcomes <- tibble(
-  cohortId = c(4, 5, 6, 7, 
-               9, 10, 11, 12), 
-  cleanWindow = c(rep(9999, 8))
+  cohortId = c(1:12), 
+  cleanWindow = c(rep(9999, 12))
 )
-
 
 
 # Time-at-risks (TARs) for the outcomes of interest in your study
@@ -110,7 +108,7 @@ plpTimeAtRisks <- tibble(
 )
 # If you are not restricting your study to a specific time window, 
 # please make these strings empty
-studyStartDate <- '20200101' #YYYYMMDD
+studyStartDate <- '20171201' #YYYYMMDD
 studyEndDate <- '20241231'   #YYYYMMDD
 # Some of the settings require study dates with hyphens
 studyStartDateWithHyphens <- gsub("(\\d{4})(\\d{2})(\\d{2})", "\\1-\\2-\\3", studyStartDate)
@@ -274,8 +272,8 @@ allCohortIdsExceptOutcomes <- cohortDefinitionSet %>%
 
 characterizationModuleSpecifications <- cModuleSettingsCreator$createModuleSpecifications(
   targetIds = allCohortIdsExceptOutcomes,
-  outcomeIds = outcomes$cohortId, # original
-  # outcomeIds = oList$outcomeCohortId, # Ruochong's edits
+  # outcomeIds = outcomes$cohortId, # original
+  outcomeIds = oList$outcomeCohortId, # Ruochong's edits
   outcomeWashoutDays = outcomes$cleanWindow,
   minPriorObservation = 365,
   dechallengeStopInterval = 30,
@@ -343,7 +341,7 @@ irDesign <- CohortIncidence::createIncidenceDesign(
     byYear = TRUE,
     byGender = TRUE,
     byAge = TRUE,
-    ageBreaks = seq(0, 110, by = 10)
+    ageBreaks = seq(0, 110, by = 5)
   )
 )
 cohortIncidenceModuleSpecifications <- ciModuleSettingsCreator$createModuleSpecifications(
