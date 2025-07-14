@@ -626,7 +626,7 @@ selfControlledModuleSpecifications <- sccsModuleSettingsCreator$createModuleSpec
   exposuresOutcomeList = eoList,
   combineDataFetchAcrossOutcomes = FALSE,
   sccsDiagnosticThresholds = SelfControlledCaseSeries::createSccsDiagnosticThresholds(
-    mdrrThreshold = Inf,
+    mdrrThreshold = 10,
     easeThreshold = 0.25,
     timeTrendPThreshold = 0.05,
     preExposurePThreshold = 0.05
