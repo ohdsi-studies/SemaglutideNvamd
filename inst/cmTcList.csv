@@ -1,14 +1,14 @@
-target_cohort_id,target_cohort_name,comparator_cohort_id,comparator_cohort_name
-201,New user of semaglutide as 2nd line prior T2DM and metformin,211,New user of dulaglutide as 2nd line prior T2DM and metformin
-201,New user of semaglutide as 2nd line prior T2DM and metformin,212,New user of exenatide as 2nd line prior T2DM and metformin
-201,New user of semaglutide as 2nd line prior T2DM and metformin,213,New user of empagliflozin as 2nd line prior T2DM and metformin
-201,New user of semaglutide as 2nd line prior T2DM and metformin,214,New user of sitagliptin as 2nd line prior T2DM and metformin
-201,New user of semaglutide as 2nd line prior T2DM and metformin,215,New user of glipizide as 2nd line prior T2DM and metformin
-301,New user of semaglutide with prior T2DM,311,New user of dulaglutide with prior T2DM
-301,New user of semaglutide with prior T2DM,312,New user of exenatide with prior T2DM
-301,New user of semaglutide with prior T2DM,313,New user of empagliflozin with prior T2DM
-301,New user of semaglutide with prior T2DM,314,New user of sitagliptin with prior T2DM
-301,New user of semaglutide with prior T2DM,315,New user of glipizide with prior T2DM
-401,New user of semaglutide as 2nd line prior T2DM and metformin Dec2017-Jan2020,411,New user of empagliflozin as 2nd line prior T2DM and metformin Dec2017-Jan2020
-402,New user of semaglutide as 2nd line prior T2DM and metformin Feb2020-June2021,412,New user of empagliflozin as 2nd line prior T2DM and metformin Feb2020-June2021
-403,New user of semaglutide as 2nd line prior T2DM and metformin July2021-Dec2024,413,New user of empagliflozin as 2nd line prior T2DM and metformin July2021-Dec2024
+target_cohort_id,target_cohort_name,target_concept_id,comparator_cohort_id,comparator_cohort_name,comparator_concept_id
+201,New user of semaglutide as 2nd line prior T2DM and metformin,793143,211,New user of dulaglutide as 2nd line prior T2DM and metformin,45774435
+201,New user of semaglutide as 2nd line prior T2DM and metformin,793143,212,New user of exenatide as 2nd line prior T2DM and metformin,1583722
+201,New user of semaglutide as 2nd line prior T2DM and metformin,793143,213,New user of empagliflozin as 2nd line prior T2DM and metformin,45774751
+201,New user of semaglutide as 2nd line prior T2DM and metformin,793143,214,New user of sitagliptin as 2nd line prior T2DM and metformin,1580747
+201,New user of semaglutide as 2nd line prior T2DM and metformin,793143,215,New user of glipizide as 2nd line prior T2DM and metformin,1560171
+301,New user of semaglutide with prior T2DM,793143,311,New user of dulaglutide with prior T2DM,45774435
+301,New user of semaglutide with prior T2DM,793143,312,New user of exenatide with prior T2DM,1583722
+301,New user of semaglutide with prior T2DM,793143,313,New user of empagliflozin with prior T2DM,45774751
+301,New user of semaglutide with prior T2DM,793143,314,New user of sitagliptin with prior T2DM,1580747
+301,New user of semaglutide with prior T2DM,793143,315,New user of glipizide with prior T2DM,1560171
+401,New user of semaglutide as 2nd line prior T2DM and metformin Dec2017-Jan2020,793143,411,New user of empagliflozin as 2nd line prior T2DM and metformin Dec2017-Jan2020,45774751
+402,New user of semaglutide as 2nd line prior T2DM and metformin Feb2020-June2021,793143,412,New user of empagliflozin as 2nd line prior T2DM and metformin Feb2020-June2021,45774751
+403,New user of semaglutide as 2nd line prior T2DM and metformin July2021-Dec2024,793143,413,New user of empagliflozin as 2nd line prior T2DM and metformin July2021-Dec2024,45774751
