@@ -62,4 +62,3 @@ Strategus::execute(
   executionSettings = executionSettings,
   connectionDetails = connectionDetails
 )
-
