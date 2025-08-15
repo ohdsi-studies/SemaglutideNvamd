@@ -45,14 +45,14 @@
     },
     "CohortDiagnostics": {
       "Package": "CohortDiagnostics",
-      "Version": "3.3.1",
+      "Version": "3.4.1",
       "Source": "GitHub",
       "RemoteType": "github",
       "RemoteHost": "api.github.com",
-      "RemoteUsername": "ohdsi",
+      "RemoteUsername": "OHDSI",
       "RemoteRepo": "CohortDiagnostics",
-      "RemoteRef": "v3.3.1",
-      "RemoteSha": "0829b780b8368234aa59090a5c06ef8c19aab1e6"
+      "RemoteRef": "main",
+      "RemoteSha": "09440f59e3ec447af2bb9b907a92a5a3a1c1f7a8"
     },
     "CohortGenerator": {
       "Package": "CohortGenerator",
