@@ -1,0 +1,200 @@
+# Indication Cohort
+
+```{r indication-cohort, echo=FALSE, results="asis", warning=FALSE, message=FALSE}
+
+printCohortDefinitionFromNameAndJson(name = "Persons with Type 2 DM and no prior T1DM or secondary Diabetes",
+                                     json = SqlRender::readSql("../inst/cohorts/50.json"),
+                                     withConcepts = TRUE)
+```
+
+# Exposure Cohorts for Cohort Design
+
+```{r exposore-cohort-cohort-design, echo=FALSE, results="asis", warning=FALSE, message=FALSE}
+
+printCohortDefinitionFromNameAndJson(name = "New user of semaglutide as 2nd line prior T2DM and metformin",
+                                     json = SqlRender::readSql("../inst/cohorts/201.json"),
+                                     withConcepts = TRUE)
+
+printCohortDefinitionFromNameAndJson(name = "New user of dulaglutide as 2nd line prior T2DM and metformin",
+                                     json = SqlRender::readSql("../inst/cohorts/211.json"),
+                                     withConcepts = TRUE)
+
+printCohortDefinitionFromNameAndJson(name = "New user of exenatide as 2nd line prior T2DM and metformin",
+                                     json = SqlRender::readSql("../inst/cohorts/212.json"),
+                                     withConcepts = TRUE)
+
+printCohortDefinitionFromNameAndJson(name = "New user of empagliflozin as 2nd line prior T2DM and metformin",
+                                     json = SqlRender::readSql("../inst/cohorts/213.json"),
+                                     withConcepts = TRUE)
+
+printCohortDefinitionFromNameAndJson(name = "New user of sitagliptin as 2nd line prior T2DM and metformin",
+                                     json = SqlRender::readSql("../inst/cohorts/214.json"),
+                                     withConcepts = TRUE)
+
+printCohortDefinitionFromNameAndJson(name = "New user of glipizide as 2nd line prior T2DM and metformin",
+                                     json = SqlRender::readSql("../inst/cohorts/215.json"),
+                                     withConcepts = TRUE)
+
+printCohortDefinitionFromNameAndJson(name = "New user of semaglutide with prior T2DM",
+                                     json = SqlRender::readSql("../inst/cohorts/301.json"),
+                                     withConcepts = TRUE)
+
+printCohortDefinitionFromNameAndJson(name = "New user of dulaglutide with prior T2DM",
+                                     json = SqlRender::readSql("../inst/cohorts/311.json"),
+                                     withConcepts = TRUE)
+
+printCohortDefinitionFromNameAndJson(name = "New user of exenatide with prior T2DM",
+                                     json = SqlRender::readSql("../inst/cohorts/312.json"),
+                                     withConcepts = TRUE)
+
+printCohortDefinitionFromNameAndJson(name = "New user of empagliflozin with prior T2DM",
+                                     json = SqlRender::readSql("../inst/cohorts/313.json"),
+                                     withConcepts = TRUE)
+
+printCohortDefinitionFromNameAndJson(name = "New user of sitagliptin with prior T2DM",
+                                     json = SqlRender::readSql("../inst/cohorts/314.json"),
+                                     withConcepts = TRUE)
+
+printCohortDefinitionFromNameAndJson(name = "New user of glipizide with prior T2DM",
+                                     json = SqlRender::readSql("../inst/cohorts/315.json"),
+                                     withConcepts = TRUE)
+
+printCohortDefinitionFromNameAndJson(name = "New user of semaglutide as 2nd line prior T2DM and metformin Dec2017-Jan2020",
+                                     json = SqlRender::readSql("../inst/cohorts/401.json"),
+                                     withConcepts = TRUE)
+
+printCohortDefinitionFromNameAndJson(name = "New user of semaglutide as 2nd line prior T2DM and metformin Feb2020-June2021",
+                                     json = SqlRender::readSql("../inst/cohorts/402.json"),
+                                     withConcepts = TRUE)
+
+printCohortDefinitionFromNameAndJson(name = "New user of semaglutide as 2nd line prior T2DM and metformin July2021-Dec2024",
+                                     json = SqlRender::readSql("../inst/cohorts/403.json"),
+                                     withConcepts = TRUE)
+
+printCohortDefinitionFromNameAndJson(name = "New user of empagliflozin as 2nd line prior T2DM and metformin Dec2017-Jan2020",
+                                     json = SqlRender::readSql("../inst/cohorts/411.json"),
+                                     withConcepts = TRUE)
+
+printCohortDefinitionFromNameAndJson(name = "New user of empagliflozin as 2nd line prior T2DM and metformin Feb2020-June2021",
+                                     json = SqlRender::readSql("../inst/cohorts/412.json"),
+                                     withConcepts = TRUE)
+
+printCohortDefinitionFromNameAndJson(name = "New user of empagliflozin as 2nd line prior T2DM and metformin July2021-Dec2024",
+                                     json = SqlRender::readSql("../inst/cohorts/413.json"),
+                                     withConcepts = TRUE)
+
+```
+
+# Exposure Cohorts for SCCS
+
+```{r exposore-cohort-scss, echo=FALSE, results="asis", warning=FALSE, message=FALSE}
+
+printCohortDefinitionFromNameAndJson(name = "Semaglutide exposures",
+                                     json = SqlRender::readSql("../inst/cohorts/101.json"),
+                                     withConcepts = TRUE)
+
+printCohortDefinitionFromNameAndJson(name = "Dulaglutide exposures",
+                                     json = SqlRender::readSql("../inst/cohorts/102.json"),
+                                     withConcepts = TRUE)
+
+printCohortDefinitionFromNameAndJson(name = "Exenatide exposures",
+                                     json = SqlRender::readSql("../inst/cohorts/103.json"),
+                                     withConcepts = TRUE)
+
+printCohortDefinitionFromNameAndJson(name = "Empagliflozin exposures",
+                                     json = SqlRender::readSql("../inst/cohorts/104.json"),
+                                     withConcepts = TRUE)
+
+printCohortDefinitionFromNameAndJson(name = "Sitagliptin exposures",
+                                     json = SqlRender::readSql("../inst/cohorts/105.json"),
+                                     withConcepts = TRUE)
+
+printCohortDefinitionFromNameAndJson(name = "Glipizide exposures",
+                                     json = SqlRender::readSql("../inst/cohorts/106.json"),
+                                     withConcepts = TRUE)
+```
+
+# Outcome Cohorts
+
+
+```{r outcome-cohorts, echo=FALSE, results="asis", warning=FALSE, message=FALSE}
+
+printCohortDefinitionFromNameAndJson(name = "Specific NVAMD",
+                                     json = SqlRender::readSql("../inst/cohorts/1.json"),
+                                     withConcepts = TRUE)
+
+printCohortDefinitionFromNameAndJson(name = "Sensitive NVAMD",
+                                     json = SqlRender::readSql("../inst/cohorts/2.json"),
+                                     withConcepts = TRUE)
+
+printCohortDefinitionFromNameAndJson(name = "Non-infectious Ocular Inflammation",
+                                     json = SqlRender::readSql("../inst/cohorts/3.json"),
+                                     withConcepts = TRUE)
+
+printCohortDefinitionFromNameAndJson(name = "Anterior Uveitis",
+                                     json = SqlRender::readSql("../inst/cohorts/4.json"),
+                                     withConcepts = TRUE)
+
+printCohortDefinitionFromNameAndJson(name = "Chorioretinal Inflammation",
+                                     json = SqlRender::readSql("../inst/cohorts/5.json"),
+                                     withConcepts = TRUE)
+
+printCohortDefinitionFromNameAndJson(name = "Panuveitis",
+                                     json = SqlRender::readSql("../inst/cohorts/6.json"),
+                                     withConcepts = TRUE)
+
+printCohortDefinitionFromNameAndJson(name = "Retinal Vasculitis",
+                                     json = SqlRender::readSql("../inst/cohorts/7.json"),
+                                     withConcepts = TRUE)
+
+printCohortDefinitionFromNameAndJson(name = "Non-infectious Ocular Inflammation excluding intraocular surgery",
+                                     json = SqlRender::readSql("../inst/cohorts/8.json"),
+                                     withConcepts = TRUE)
+
+printCohortDefinitionFromNameAndJson(name = "Anterior Uveitis excluding intraocular surgery",
+                                     json = SqlRender::readSql("../inst/cohorts/9.json"),
+                                     withConcepts = TRUE)
+
+printCohortDefinitionFromNameAndJson(name = "Chorioretinal Inflammation excluding intraocular surgery",
+                                     json = SqlRender::readSql("../inst/cohorts/10.json"),
+                                     withConcepts = TRUE)
+
+printCohortDefinitionFromNameAndJson(name = "Panuveitis excluding intraocular surgery",
+                                     json = SqlRender::readSql("../inst/cohorts/11.json"),
+                                     withConcepts = TRUE)
+
+printCohortDefinitionFromNameAndJson(name = "Retinal Vasculitis excluding intraocular surgery",
+                                     json = SqlRender::readSql("../inst/cohorts/12.json"),
+                                     withConcepts = TRUE)
+```
+
+
+
+# Negative Control Concepts
+
+\captionsetup{labelformat=empty}
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+negative_controls <- readr::read_csv("../inst/negativeControlOutcomes.csv") %>%
+  select(conceptid, conceptname) %>%
+  rename("Concept ID" = conceptid, "name" = conceptname) %>%
+  arrange(name)
+
+colnames(negative_controls) <- c("", "Concept ID")
+
+tab <- kable(negative_controls, booktabs = TRUE, linesep = "", longtable = TRUE,
+      caption = "Negative outcome controls specified through condition occurrences that map to (a descendent of) the indicated concept ID") %>%
+  kable_styling(bootstrap_options = "striped", latex_options = "striped")
+
+if (knitr::is_latex_output()) {
+  tab %>%
+    column_spec(1, width = "40em") %>%
+    column_spec(2, width = "15em") %>%
+    kable_styling(font_size = latex_table_font_size,
+                  latex_options = c("repeat_header"),
+                  repeat_header_continued = "\\textit{(Continued on Next Page...)}")
+
+} else {
+  tab
+}
+```

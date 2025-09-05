@@ -1,0 +1,12 @@
+**Background**: Despite its cardiovascular and kidney benefits, semaglutide has been recently linked to ophthalmic complications including neovascular age-related macular degeneration (NVAMD). It may also have anti-inflammatory properties and a recent report suggests it may have a protective association against the incidence of non-infectious uveitis.
+
+**Purpose**: To estimate the risk of NVAMD and with semaglutide use compared with other GLP-1 RAs (dulaglutide, and exenatide), and non-GLP-1 RA medications (including empagliflozin, sitagliptin, and glipizide) among adults with type 2 diabetes mellitus. To estimate the relative incidence rate of NVAMD associated with GLP-1 RAs and non-GLP-1 RAs exposure compared with non-exposure. Parallel analyses will be performed with non-infectious uveitis as an outcome.
+
+**Design**: Retrospective study employing 1) an active comparator, new-user cohort design, 2) self-controlled case series across the OHDSI Evidence Network.
+
+**Subjects**: Adults (≥ 18 years) with type 2 diabetes mellitus who are users of semaglutide (a GLP-1 RA), dulaglutide (a GLP-1 RA), exenatide (a GLP-1 RA), empagliflozin (an SGLT2 inhibitor), sitagliptin (a DPP4 inhibitor), or glipizide (a sulfonylurea)
+
+**Methods**: 1) New-User active Comparator Cohort Design: Patients who are new-users of semaglutide will be compared to propensity score matched patients with each of the other GLP-1 RA and non-GLP-1 RA medications. We will deploy the large-scale propensity score method that adjusts for a comprehensive range of baseline characteristics. Cox models will be used to compare the time to NVAMD between patients who receive semaglutide with patients who receive empagliflozin, sitagliptin, and glipizide. Similar comparisons will be made between the other GLP-1 RA (dulaglutide and exenatide) with each of the comparators. 2) Self-Controlled Case Series: the incidence rate of NVAMD during periods of exposure with each of the T2DM medications will be compared to the incidence rate of NVAMD during control periods of non-exposure using Poisson regression models. Parallel analyses will be performed with non-infectious uveitis as an outcome.
+
+**Conclusions**: Clarifying the risk of NVAMD associated with semaglutide (and other GLP-1 RA) by 1) characterizing the incidence in the exposed population, and 2) estimating the risk of exposure will help guide the appropriate use of this medication. Parallel analyses will be performed with non-infectious uveitis as an outcome.
+

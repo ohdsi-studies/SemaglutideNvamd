@@ -1,0 +1,28 @@
+```{r abbreviations, echo=FALSE, message=FALSE}
+abbreviations <- readr::read_delim(col_names = FALSE, delim = ";", trim_ws = TRUE, file = "
+  NVAMD; neovascular age-related macular degeneration
+  NIU; non-infectious uveitis
+  GLP-1 RA; glucagon-like peptide 1 receptor agonist
+  VEGF; vascular endothelial growth factor
+  SGLT2; sodium-glucose cotransporter-2
+  DPP4; dipeptidyl peptidase-4
+  OHDSI; Observational Health Data Sciences and Informatics
+  HADES; Health Analytics Data-to-Evidence Suite
+  T2DM; Type 2 diabetes mellitus
+  CCI; Charlson Comorbidity Index
+  DCSI; Diabetes Complications Severity Index
+  SMD; standardized mean difference
+  EASE; expected absolute systematic error
+  MDRR; minimum detectable relative risk
+  ARVO; The Association for Research in Vision and Ophthalmology
+")
+
+tab <- kable(abbreviations, col.names = NULL, linesep = "", booktabs = TRUE)
+
+if (knitr::is_latex_output()) {
+  tab %>% kable_styling(latex_options = c("striped", "hold_position"),
+                        font_size = latex_table_font_size)
+} else {
+  tab %>% kable_styling(bootstrap_options = "striped")
+}
+```
