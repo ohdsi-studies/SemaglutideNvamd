@@ -11,7 +11,7 @@ Estimation of the risk of NVAMD and other vision disorders from exposure to sema
 - Study lead forums tag: **[[Cindy X. Cai]](https://forums.ohdsi.org/u/cindyxcai)**
 - Study start date: **Jun 11, 2025**
 - Study end date: **NA**
-- Protocol: **<a href="https://docs.google.com/document/d/1R5F0YVusMAc3F-tek8Mi3vekCqPf85v92QcbfIhG3dg/edit?tab=t.0">Google Docs</a>**
+- Protocol: **<a href="https://ohdsi-studies.github.io/SemaglutideNvamd/protocol.html">HTML Document</a>**
 - Publications: **NA**
 - Results explorer: **NA**
 
